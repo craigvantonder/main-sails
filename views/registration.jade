@@ -1,0 +1,22 @@
+include layout
+    .container
+        .row-fluid
+            .col-xs-12
+                h2 Register
+                .error
+                    if error != null || error != undefined
+                        p #{error}
+        .row-fluid
+            .col-xs-12
+                form(class="form-horizontal" action="/registration" method="post",autocomplete='off')
+                    .form-group
+                        label Name &nbsp;
+                        input(type='text' name='name')
+                    .form-group
+                        label Email &nbsp;
+                        input(type='text' name='email')
+                    .form-group
+                        label Password &nbsp;
+                        input(type='password' name='password')
+                    .form-group
+                        input(type='submit' name='Log In')

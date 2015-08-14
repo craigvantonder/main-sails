@@ -1,0 +1,14 @@
+include layout
+
+    | hello there!
+
+    form(class="form-horizontal" action="/auth/local" method="post")
+        .form-group
+            label.col-md-4 Email &nbsp;
+            input(type='text' name='identifier', class='col-md-8 form-control')
+        .form-group
+            label.col-md-4 Password &nbsp;
+            input(type='password' name='password', class='col-md-8 form-control')
+        .form-group
+            .col-md-4
+                input(type='submit' name='Log In', class="btn btn-primary ")

@@ -1,0 +1,21 @@
+include layout
+    .container.main-container
+        .row-fluid
+            .col-md-4
+
+                h2 Login
+                .error
+                    if error != null || error != undefined
+                        p #{error}
+
+
+                form(class="form-horizontal" action="/login" method="post")
+                    .form-group
+                        label.col-md-4 Email &nbsp;
+                        input(type='text' name='email', class='col-md-8 form-control')
+                    .form-group
+                        label.col-md-4 Password &nbsp;
+                        input(type='password' name='password', class='col-md-8 form-control')
+                    .form-group
+                        .col-md-4
+                            input(type='submit' name='Log In', class="btn btn-primary ")
