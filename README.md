@@ -8,4 +8,4 @@ It is based on Ryan Quinns sails repo https://github.com/ryanwilliamquinn/sails-
 
 I have modified it to use SASS, Jade and winston for file logging.
 
-There should be a blog post regarding this at http://gofwd.co.za/hoisting-the-main-sail/
+There should be a blog post regarding this at http://gofwd.co.za/hoisting-the-main-sail/ (site not launched yet)
